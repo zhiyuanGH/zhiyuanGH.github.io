@@ -1,10 +1,22 @@
-# personal-website-template
+# Zhiyuan Hu — Academic Homepage
 
-A simple one page template suited for personal and portfolio pages. 
+Personal academic website: https://zhiyuangh.github.io/
 
-## Usage
+## Edit and preview
 
-- Fork this repository
-- Rename it to `<your-github-username>.github.io`
-- Edit `index.html` to add your personal details
-- Goto `http://<your-github-username.github.io` and website will be visible there
+- Edit `build_site.py` to update the biography, publications, experience, and Chinese translations.
+- Run `python3 build_site.py` to regenerate `index.html`, `publications.html`, and `experience.html`.
+- Edit `styles.css` for layout and `app.js` for language switching and citation interactions.
+- Run `python3 -m http.server 4173` and open `http://localhost:4173` to preview.
+
+The site uses system fonts and local assets. It does not require a frontend framework or external scripts.
+
+## Deployment
+
+GitHub Pages publishes the root of the `master` branch. The `.nojekyll` file enables direct static hosting. Push the updated HTML and assets to publish.
+
+## Content
+
+The current biography and research focus were reviewed by Zhiyuan Hu. The site includes selected publications and public professional information. It does not include the old CV PDF or a personal phone number.
+
+The visual style is inspired by traditional academic homepages, including https://zhaorui-zhang.github.io/. The earlier version of this repository used a personal-website template; its original files and license remain in the repository history.
